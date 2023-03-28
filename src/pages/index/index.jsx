@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
+import MutText from '../../components/MutText'
 
 export default class Index extends Component {
   componentWillMount() {}
@@ -54,6 +55,7 @@ export default class Index extends Component {
             </Text>
           </Text>
         </Text>
+        <MutText></MutText>
       </View>
     )
   }
