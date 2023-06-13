@@ -11,6 +11,12 @@ const config = {
   outputRoot: 'dist',
   plugins: [
     [
+      '@tarojs/plugin-platform-swan',
+      {
+        flattenTextLevel: 5,
+      },
+    ],
+    [
       '@tarojs/plugin-inject',
       {
         nestElements: {

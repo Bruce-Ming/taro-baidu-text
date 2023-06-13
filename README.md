@@ -9,3 +9,14 @@
 An SelectorQuery call is ignored because no proper page or component is found. Please considering using `SelectorQuery.in` to specify a proper one.
 
 ![查看效果](./screenshot-20230328-174238.png)
+
+## 富文本解析嵌套太多,百度小程序还是无法解析
+
+dangerouslySetInnerHTML方法中的富文本的层级太多还是会丢失文本.
+```jsx
+        <View
+          className='taro_html'
+          dangerouslySetInnerHTML={{ __html: RichText }}
+        ></View>
+```
+![查看效果](./screenshot-20230613-143955.png)
